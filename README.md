@@ -2,20 +2,21 @@
 Final Project (4) for Group 3
 View our final project for Group 3 directly on [Github](https://stbere.github.io/Final-Project-4/)!
 
-![image](images/Slide1.jpg)
-![image](images/Slide2.jpg)
-![image](images/Slide3.jpg)
-![image](images/Slide4.jpg)
-![image](images/Slide5.jpg)
-![image](images/Slide6.jpg)
-![image](images/Slide7.jpg)
-![image](images/Slide8.jpg)
-![image](images/Slide9.jpg)
-![image](images/Slide10.jpg)
-![image](images/Slide11.jpg)
-![image](images/Slide12.jpg)
-![image](images/Slide13.jpg)
-![image](images/Slide14.jpg)
-![image](images/Slide15.jpg)
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide1.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide2.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide3.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide4.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide5.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide6.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide7.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide8.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide9.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide10.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide11.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide12.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide13.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide14.JPG" width="600" />
+<img src="https://github.com/stbere/Final-Project-4/blob/main/images/Slide15.JPG" width="600" />
+
 
 
