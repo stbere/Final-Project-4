@@ -34,7 +34,7 @@
 <script>
 $(document).ready(function() {
   const symbol = '^TNX';
-  const apiUrl = `https://finance.yahoo.com/quote/${symbol}?p=${symbol}&.tsrc=fin-srch`;
+  const apiUrl = `https://cors-anywhere.herokuapp.com/https://finance.yahoo.com/quote/${symbol}?p=${symbol}&.tsrc=fin-srch`;
   $.get(apiUrl, function(data) {
     const regex = /"regularMarketPrice":{"raw":(\d+\.\d+),"fmt":"(\d+\.\d+)"}/;
     const matches = regex.exec(data);
