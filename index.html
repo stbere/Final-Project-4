@@ -19,6 +19,34 @@
   <img src="https://github.com/stbere/project-4/blob/main/images/forecast-fortress.PNG?raw=true" alt="Website Banner" style="width:100%; max-width:1000px; height:auto;">
 </div>
 </br>
+</br>
+<!-- MAY 9TH EDITS GO HERE-->
+<div id="ticker">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  const apiUrl = 'https://www.federalreserve.gov/datadownload/Output.aspx';
+  const params = {
+    series: 'H15',
+    lastObs: '1',
+    format: 'json',
+    apiKey: 'ea14b8a2a591a56328fb529aaf7b9592' // my API key
+  };
+  const queryString = Object.keys(params)
+    .map(key => key + '=' + encodeURIComponent(params[key]))
+    .join('&');
+  const url = `${apiUrl}?${queryString}`;
+  $.getJSON(url, function(data) {
+    const currentInterestRate = data[0].H15_TCMDO.values[0].value;
+    const tickerElement = $('#ticker');
+    tickerElement.text(`Current federal interest rate for mortgages: ${currentInterestRate}%`);
+  });
+});
+</script>
+</div>
+<!--MAY 9TH EDITS END HERE-->
+</br>
+</br>
 <div class="text-container">
 	<h1>
     <p>Our first Machine Learning example yielded low accuracy over a large, unfiltered dataset</p>
