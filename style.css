@@ -271,3 +271,26 @@ select {
 	display: block;
 	margin: 0 auto;
 }
+
+#ticker-container {
+  text-align: center;
+}
+
+#ticker {
+  text-align: center;
+  color: white;
+}
+table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+}
+th {
+  background-color: #ccc;
+}
