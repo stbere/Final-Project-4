@@ -21,30 +21,83 @@
 </br>
 </br>
 <!-- MAY 9TH EDITS GO HERE-->
-<div id="ticker-container">
-  <div id="ticker"></div>
-</div>
-
 <style>
-#ticker-container {
+#ticker {
   text-align: center;
 }
+table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid black;
+}
+th {
+  background-color: #ccc;
+}
 </style>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function() {
-  const symbol = '^TNX';
-  const apiUrl = `https://api.allorigins.win/get?url=https://finance.yahoo.com/quote/${symbol}?p=${symbol}&.tsrc=fin-srch`;
-  $.get(apiUrl, function(data) {
-    const response = JSON.parse(data.contents);
-    const regex = /"regularMarketPrice":{"raw":(\d+\.\d+),"fmt":"(\d+\.\d+)"}/;
-    const matches = regex.exec(response);
-    const currentInterestRate = parseFloat(matches[1]).toFixed(2);
-    const tickerElement = $('#ticker');
-    tickerElement.text(`Current federal interest rate for mortgages: ${currentInterestRate}%`);
-  });
-});
-</script>
+
+<div id="ticker">
+  <h2>Current Federal Interest Rate for Mortgages:</h2>
+  <h1>2.86%</h1>
+</div>
+
+<table>
+  <tr>
+    <th>Loan Type</th>
+    <th>Interest Rate</th>
+    <th>APR</th>
+  </tr>
+  <tr>
+    <td>30-year fixed-rate</td>
+    <td>6.628%</td>
+    <td>6.708%</td>
+  </tr>
+  <tr>
+    <td>20-year fixed-rate</td>
+    <td>6.199%</td>
+    <td>6.328%</td>
+  </tr>
+  <tr>
+    <td>15-year fixed-rate</td>
+    <td>5.579%</td>
+    <td>5.719%</td>
+  </tr>
+  <tr>
+    <td>10-year fixed-rate</td>
+    <td>5.875%</td>
+    <td>6.266%</td>
+  </tr>
+  <tr>
+    <td>7-year ARM</td>
+    <td>6.355%</td>
+    <td>7.188%</td>
+  </tr>
+  <tr>
+    <td>5-year ARM</td>
+    <td>6.098%</td>
+    <td>7.174%</td>
+  </tr>
+  <tr>
+    <td>3-year ARM</td>
+    <td>6.125%</td>
+    <td>7.204%</td>
+  </tr>
+  <tr>
+    <td>30-year fixed-rate FHA</td>
+    <td>5.892%</td>
+    <td>6.812%</td>
+  </tr>
+  <tr>
+    <td>30-year fixed-rate VA</td>
+    <td>5.455%</td>
+    <td>5.872%</td>
+  </tr>
+</table>
+
 <!--MAY 9TH EDITS END HERE-->
 </br>
 </br>
