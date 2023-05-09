@@ -33,24 +33,12 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 $(document).ready(function() {
-  const apiUrl = 'https://cors-anywhere.herokuapp.com/https://api.stlouisfed.org/fred/series/observations';
-  const params = {
-    series_id: 'MORTGAGE30US',
-    api_key: 'c4c8a4f58a532783c29d8d0a1341d9f9',
-    file_type: 'json',
-    observation_start: 'today',
-    frequency: 'd',
-    aggregation_method: 'eop',
-    order_by: 'observation_date',
-    sort_order: 'desc',
-    limit: '1'
-  };
-  const queryString = Object.keys(params)
-    .map(key => key + '=' + encodeURIComponent(params[key]))
-    .join('&');
-  const url = `${apiUrl}?${queryString}`;
-  $.getJSON(url, function(data) {
-    const currentInterestRate = data.observations[0].value;
+  const symbol = '^TNX';
+  const apiUrl = `https://finance.yahoo.com/quote/${symbol}?p=${symbol}&.tsrc=fin-srch`;
+  $.get(apiUrl, function(data) {
+    const regex = /"regularMarketPrice":{"raw":(\d+\.\d+),"fmt":"(\d+\.\d+)"}/;
+    const matches = regex.exec(data);
+    const currentInterestRate = parseFloat(matches[1]).toFixed(2);
     const tickerElement = $('#ticker');
     tickerElement.text(`Current federal interest rate for mortgages: ${currentInterestRate}%`);
   });
