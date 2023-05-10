@@ -25,7 +25,17 @@
 #ticker {
   text-align: center;
   color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: ticker 20s linear infinite;
 }
+
+@keyframes ticker {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
 table {
   margin: 0 auto;
   width: 80%;
